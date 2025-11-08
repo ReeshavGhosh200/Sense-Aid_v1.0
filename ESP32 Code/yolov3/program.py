@@ -5,8 +5,8 @@ import requests
 import time
 
 # Configuration
-camera_url = 'http://192.168.134.171/cam-hi.jpg'
-esp32_ip = '192.168.134.184'  # Replace with your WiFi ESP32's IP
+camera_url = 'http://192.168.-/cam-hi.jpg' # Replace with your ESP32 Cam's IP
+esp32_ip = '192.168.-'  # Replace with your WiFi ESP32's IP
 
 # YOLO configuration
 whT = 320
@@ -50,7 +50,7 @@ def find_objects(outputs, img):
     classIds = []
     confs = []
     
-    detections = {
+    detections = { # Detect only these objects
         'bus': False,
         'car': False,
         'truck': False,
